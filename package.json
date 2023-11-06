@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "env": "^0.0.2",
+    "firebase": "^10.5.2",
     "flowbite": "^2.0.0",
     "flowbite-react": "^0.6.4",
     "localforage": "^1.10.0",
