@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import AllServices from "./AllServices";
 
 
 
@@ -22,6 +23,16 @@ const services=useLoaderData([])
   </div>
 </div>
         </div>
+        <div className="mt-10">
+            <h1 className="text-2xl font-semibold font-serif text-center">Our Services</h1>
+            <p className="text-center font-medium mt-2">Explore the most sought-after fitness and sports services tailored to your specific goals, all in one convenient place</p>
+        </div>
+        <div className="space-y-5 mt-8 mb-8">
+          {
+            services.map(allservice=><AllServices allservice={allservice} key={allservice.id}></AllServices>)
+          }
+        </div>
+        <button className="btn btn-outline btn-secondary flex mx-auto">Show All</button>
         </div>
     );
 };

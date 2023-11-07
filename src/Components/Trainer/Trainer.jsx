@@ -13,16 +13,16 @@ const Trainer = () => {
             <div className="flex mt-16">
             <div className="flex-1">
             <div className="space-y-10 bg-base-200">
-  <div className=" flex flex-col lg:flex-row">
+  <div className=" flex flex-col h-56 lg:flex-row">
     <img src="https://i.ibb.co/R34BzJ5/fit-for-court-domination-your-ultimate-basketball-trainer-header-v2-960x540.jpg" className="w-96  h-56 rounded-lg shadow-2xl" />
     <div className=" bg-slate-800">
       <h1 className="text-xl  font-bold font-serif ml-4">John</h1>
       <h4 className="text-red-400 ml-4">BasketBall</h4>
-      <p className="py-6 ml-4">Hey everyone, I would  like to introduce you to John, an incredibly talented basketball trainer with a passion for developing players of all levels. .</p>
+      <p className="py-6 ml-4">Hey everyone, I would  like to introduce you to John, an incredibly talented basketball trainer with a passion for developing players of all levels.</p>
 
     </div>
   </div>
-  <div className=" flex flex-col lg:flex-row">
+  <div className=" flex flex-col h-56 lg:flex-row">
     <img src="https://i.ibb.co/JtByS2Y/bodybuilding-specialist-mobile-hero-image-2x.jpg" className="w-96 h-56 rounded-lg shadow-2xl" />
     <div className=" bg-slate-800">
       <h1 className="text-xl  font-bold font-serif ml-4">Rock</h1>
