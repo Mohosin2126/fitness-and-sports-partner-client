@@ -1,63 +1,124 @@
- [
+[
     {
-      "Category": "Personal Training",
-      "ServiceName": "One-on-One Personal Training",
-      "ServiceDescription": "Customized workouts for your fitness goals.",
-      "ServiceProvider": {
-        "Image": "image_url_here",
-        "Name": "John Smith"
-      },
-      "ServicePrice": "$60 per session"
+        "id": 1,
+        "Category": "Personal Training",
+        "ServiceName": "One-on-One Personal Training",
+        "ServiceDescription": "Customized workouts for your fitness goals.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "John Smith"
+        },
+        "ServicePrice": "$60 per session"
     },
     {
-      "Category": "Nutrition and Diet Planning",
-      "ServiceName": "Personalized Meal Plan",
-      "ServiceDescription": "Tailored nutrition guidance for your needs.",
-      "ServiceProvider": {
-        "Image": "image_url_here",
-        "Name": "Sarah Johnson"
-      },
-      "ServicePrice": "$150 for a 4-week plan"
+        "id": 2,
+        "Category": "Nutrition and Diet Planning",
+        "ServiceName": "Personalized Meal Plan",
+        "ServiceDescription": "Tailored nutrition guidance for your needs.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Sarah Johnson"
+        },
+        "ServicePrice": "$150 for a 4-week plan"
     },
     {
-      "Category": "Equipment and Gear Recommendations",
-      "ServiceName": "Fitness Gear Consultation",
-      "ServiceDescription": "Find the right tools for your workouts.",
-      "ServiceProvider": {
-        "Image": "image_url_here",
-        "Name": "Mark Davis"
-      },
-      "ServicePrice": "Free consultation"
+        "id": 3,
+        "Category": "Equipment and Gear Recommendations",
+        "ServiceName": "Fitness Gear Consultation",
+        "ServiceDescription": "Find the right tools for your workouts.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Mark Davis"
+        },
+        "ServicePrice": "Free consultation"
     },
     {
-      "Category": "Expert Advice",
-      "ServiceName": "Fitness Consultation",
-      "ServiceDescription": "Get professional guidance for your fitness journey.",
-      "ServiceProvider": {
-        "Image": "image_url_here",
-        "Name": "Emily White"
-      },
-      "ServicePrice": "$80 per hour"
+        "id": 4,
+        "Category": "Expert Advice",
+        "ServiceName": "Fitness Consultation",
+        "ServiceDescription": "Get professional guidance for your fitness journey.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Emily White"
+        },
+        "ServicePrice": "$80 per hour"
     },
     {
-      "Category": "Partner Matching Service",
-      "ServiceName": "Workout Buddy Matching",
-      "ServiceDescription": "Find a compatible workout partner.",
-      "ServiceProvider": {
-        "Image": "image_url_here",
-        "Name": "Alex Lee"
-      },
-      "ServicePrice": "$20 registration fee"
+        "id": 5,
+        "Category": "Partner Matching Service",
+        "ServiceName": "Workout Buddy Matching",
+        "ServiceDescription": "Find a compatible workout partner.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Alex Lee"
+        },
+        "ServicePrice": "$20 registration fee"
     },
     {
-      "Category": "Local Events and Activities Listings",
-      "ServiceName": "Community Fitness Calendar",
-      "ServiceDescription": "Discover local fitness events and activities.",
-      "ServiceProvider": {
-        "Image": "image_url_here",
-        "Name": "Jessica Brown"
-      },
-      "ServicePrice": "Free service"
+        "id": 6,
+        "Category": "Local Events and Activities Listings",
+        "ServiceName": "Community Fitness Calendar",
+        "ServiceDescription": "Discover local fitness events and activities.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Jessica Brown"
+        },
+        "ServicePrice": "Free service"
+    },
+    {
+        "id": 7,
+        "Category": "Online Fitness Classes",
+        "ServiceName": "Virtual Workout Sessions",
+        "ServiceDescription": "Join interactive fitness classes from anywhere.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Michael Johnson"
+        },
+        "ServicePrice": "$10 per class"
+    },
+    {
+        "id": 8,
+        "Category": "Group Exercise",
+        "ServiceName": "Group Fitness Training",
+        "ServiceDescription": "Work out with a supportive community.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Rachel Smith"
+        },
+        "ServicePrice": "$30 per session"
+    },
+    {
+        "id": 9,
+        "Category": "Fitness Workshops",
+        "ServiceName": "Specialized Fitness Workshops",
+        "ServiceDescription": "Deep dive into specific fitness topics.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Daniel Brown"
+        },
+        "ServicePrice": "$50 per workshop"
+    },
+    {
+        "id": 10,
+        "Category": "Injury Prevention",
+        "ServiceName": "Safe Exercise Planning",
+        "ServiceDescription": "Learn how to prevent workout injuries.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "Olivia Davis"
+        },
+        "ServicePrice": "Free advice"
+    },
+    {
+        "id": 11,
+        "Category": "Mind and Body Wellness",
+        "ServiceName": "Holistic Fitness Guidance",
+        "ServiceDescription": "Achieve balance between mind and body.",
+        "ServiceProvider": {
+            "Image": "image_url_here",
+            "Name": "William Wilson"
+        },
+        "ServicePrice": "$90 per hour"
     }
   ]
-
+  
