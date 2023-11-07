@@ -9,7 +9,8 @@
             "Name": "John Smith"
         },
         "ServicePrice": "$60 per session",
-        "ServiceArea": "New York City"
+        "ServiceArea": "New York City",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
             "Name": "Sarah Johnson"
         },
         "ServicePrice": "$150 for a 4-week plan",
-        "ServiceArea": "Los Angeles"
+        "ServiceArea": "Los Angeles",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
             "Name": "Mark Davis"
         },
         "ServicePrice": "Free consultation",
-        "ServiceArea": "Chicago"
+        "ServiceArea": "Chicago",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 4,
@@ -45,7 +48,8 @@
             "Name": "Emily White"
         },
         "ServicePrice": "$80 per hour",
-        "ServiceArea": "Houston"
+        "ServiceArea": "Houston",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 5,
@@ -57,7 +61,8 @@
             "Name": "Alex Lee"
         },
         "ServicePrice": "$20 registration fee",
-        "ServiceArea": "Phoenix"
+        "ServiceArea": "Phoenix",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 6,
@@ -69,7 +74,8 @@
             "Name": "Jessica Brown"
         },
         "ServicePrice": "Free service",
-        "ServiceArea": "Philadelphia"
+        "ServiceArea": "Philadelphia",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 7,
@@ -81,7 +87,8 @@
             "Name": "Michael Johnson"
         },
         "ServicePrice": "$10 per class",
-        "ServiceArea": "San Antonio"
+        "ServiceArea": "San Antonio",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 8,
@@ -93,7 +100,8 @@
             "Name": "Rachel Smith"
         },
         "ServicePrice": "$30 per session",
-        "ServiceArea": "San Diego"
+        "ServiceArea": "San Diego",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 9,
@@ -105,7 +113,8 @@
             "Name": "Daniel Brown"
         },
         "ServicePrice": "$50 per workshop",
-        "ServiceArea": "Dallas"
+        "ServiceArea": "Dallas",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 10,
@@ -117,7 +126,8 @@
             "Name": "Olivia Davis"
         },
         "ServicePrice": "Free advice",
-        "ServiceArea": "San Jose"
+        "ServiceArea": "San Jose",
+        "ServiceImage": "image_url_here"
     },
     {
         "id": 11,
@@ -129,6 +139,7 @@
             "Name": "William Wilson"
         },
         "ServicePrice": "$90 per hour",
-        "ServiceArea": "Austin"
+        "ServiceArea": "Austin",
+        "ServiceImage": "image_url_here"
     }
 ]
