@@ -7,6 +7,7 @@ const Trainer = () => {
             <h1 className="text-2xl font-semibold font-serif text-center">Trainer&Classes </h1>
             <div className="flex w-40 mx-auto mt-4">
                 <h1 className="border  w-14"></h1>
+                <h1 className="border w-16 border-red-500"></h1>
                 <h1 className="border  w-14"></h1>
             </div>
             <div className="flex mt-16">
