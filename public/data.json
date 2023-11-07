@@ -3,122 +3,132 @@
         "id": 1,
         "Category": "Personal Training",
         "ServiceName": "One-on-One Personal Training",
-        "ServiceDescription": "Customized workouts for your fitness goals.",
+        "ServiceDescription": "Receive personalized one-on-one training tailored to your fitness goals. Our expert trainers will create a comprehensive workout plan to help you achieve significant improvements in strength, endurance, and flexibility.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "John Smith"
         },
-        "ServicePrice": "$60 per session"
+        "ServicePrice": "$60 per session",
+        "ServiceArea": "New York City"
     },
     {
         "id": 2,
         "Category": "Nutrition and Diet Planning",
         "ServiceName": "Personalized Meal Plan",
-        "ServiceDescription": "Tailored nutrition guidance for your needs.",
+        "ServiceDescription": "Embark on a comprehensive nutritional journey with our customized meal plan service. Enjoy a well-balanced diet that fuels your body and supports your overall well-being, helping you achieve sustainable health benefits.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Sarah Johnson"
         },
-        "ServicePrice": "$150 for a 4-week plan"
+        "ServicePrice": "$150 for a 4-week plan",
+        "ServiceArea": "Los Angeles"
     },
     {
         "id": 3,
         "Category": "Equipment and Gear Recommendations",
         "ServiceName": "Fitness Gear Consultation",
-        "ServiceDescription": "Find the right tools for your workouts.",
+        "ServiceDescription": "Discover the best fitness gear and equipment with our expert gear consultation service. Get guidance in selecting the right tools and accessories that enhance your exercise routine and contribute to your fitness success.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Mark Davis"
         },
-        "ServicePrice": "Free consultation"
+        "ServicePrice": "Free consultation",
+        "ServiceArea": "Chicago"
     },
     {
         "id": 4,
         "Category": "Expert Advice",
         "ServiceName": "Fitness Consultation",
-        "ServiceDescription": "Get professional guidance for your fitness journey.",
+        "ServiceDescription": "Gain valuable insights and guidance for your fitness journey. Our advisors provide a personalized roadmap to achieve your desired results and offer professional advice on workout planning and injury prevention.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Emily White"
         },
-        "ServicePrice": "$80 per hour"
+        "ServicePrice": "$80 per hour",
+        "ServiceArea": "Houston"
     },
     {
         "id": 5,
         "Category": "Partner Matching Service",
         "ServiceName": "Workout Buddy Matching",
-        "ServiceDescription": "Find a compatible workout partner.",
+        "ServiceDescription": "Find the perfect workout partner and enhance your fitness journey with our innovative matching service. Connect with like-minded individuals and enjoy a more fulfilling workout experience together.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Alex Lee"
         },
-        "ServicePrice": "$20 registration fee"
+        "ServicePrice": "$20 registration fee",
+        "ServiceArea": "Phoenix"
     },
     {
         "id": 6,
         "Category": "Local Events and Activities Listings",
         "ServiceName": "Community Fitness Calendar",
-        "ServiceDescription": "Discover local fitness events and activities.",
+        "ServiceDescription": "Explore local fitness events and activities with our community calendar. Discover exciting opportunities to engage with like-minded individuals and expand your fitness network within your community.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Jessica Brown"
         },
-        "ServicePrice": "Free service"
+        "ServicePrice": "Free service",
+        "ServiceArea": "Philadelphia"
     },
     {
         "id": 7,
         "Category": "Online Fitness Classes",
         "ServiceName": "Virtual Workout Sessions",
-        "ServiceDescription": "Join interactive fitness classes from anywhere.",
+        "ServiceDescription": "Experience interactive fitness classes from home with our virtual sessions. Join experienced instructors in real-time, receive dynamic workout routines, and personalized feedback for an engaging fitness experience.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Michael Johnson"
         },
-        "ServicePrice": "$10 per class"
+        "ServicePrice": "$10 per class",
+        "ServiceArea": "San Antonio"
     },
     {
         "id": 8,
         "Category": "Group Exercise",
         "ServiceName": "Group Fitness Training",
-        "ServiceDescription": "Work out with a supportive community.",
+        "ServiceDescription": "Join a vibrant fitness community with our group training sessions. Engage in various exercise routines, receive personalized attention, and benefit from the motivation of exercising alongside like-minded individuals.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Rachel Smith"
         },
-        "ServicePrice": "$30 per session"
+        "ServicePrice": "$30 per session",
+        "ServiceArea": "San Diego"
     },
     {
         "id": 9,
         "Category": "Fitness Workshops",
         "ServiceName": "Specialized Fitness Workshops",
-        "ServiceDescription": "Deep dive into specific fitness topics.",
+        "ServiceDescription": "Deepen your understanding of fitness topics with our specialized workshops. Gain valuable knowledge and skills to optimize your fitness journey and make informed decisions regarding your overall health.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Daniel Brown"
         },
-        "ServicePrice": "$50 per workshop"
+        "ServicePrice": "$50 per workshop",
+        "ServiceArea": "Dallas"
     },
     {
         "id": 10,
         "Category": "Injury Prevention",
         "ServiceName": "Safe Exercise Planning",
-        "ServiceDescription": "Learn how to prevent workout injuries.",
+        "ServiceDescription": "Prioritize your safety during workouts with our injury prevention service. Our fitness professionals will provide you with valuable tips, techniques, and precautionary measures to minimize the risk of workout-related injuries.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "Olivia Davis"
         },
-        "ServicePrice": "Free advice"
+        "ServicePrice": "Free advice",
+        "ServiceArea": "San Jose"
     },
     {
         "id": 11,
         "Category": "Mind and Body Wellness",
         "ServiceName": "Holistic Fitness Guidance",
-        "ServiceDescription": "Achieve balance between mind and body.",
+        "ServiceDescription": "Achieve a harmonious balance between your mind and body with our holistic fitness guidance program. Experience a transformative journey that nurtures your mental, emotional, and physical health, helping you manage stress and improve focus.",
         "ServiceProvider": {
             "Image": "image_url_here",
             "Name": "William Wilson"
         },
-        "ServicePrice": "$90 per hour"
+        "ServicePrice": "$90 per hour",
+        "ServiceArea": "Austin"
     }
-  ]
-  
+]
