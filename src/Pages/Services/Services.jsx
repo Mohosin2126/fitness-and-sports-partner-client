@@ -2,7 +2,7 @@
 
 const Services = () => {
     return (
-        <div>
+        <div className="relative mt-36">
             <h2>hello this is me services </h2>
         </div>
     );

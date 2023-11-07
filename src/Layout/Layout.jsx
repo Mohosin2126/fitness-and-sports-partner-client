@@ -5,7 +5,7 @@ import Footer from "../Pages/Shared/Footer/Footer";
 const Layout = () => {
   return (
     <div>
-      <div className=" fixed w-full top-0 z-50">
+      <div className=" fixed w-full top-0 z-30">
         <Header />
       </div>
       <div className="relative ">
