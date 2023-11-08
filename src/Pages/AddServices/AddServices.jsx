@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 
 const AddServices = () => {
@@ -26,7 +27,9 @@ body:JSON.stringify(service)
   })
   .then(res=>res.json())
   .then(data=>{
-    console.log(data)
+    if(data.insertedId){
+        swal("Thank You !", "You Have Added a Service", "success");
+    }
   })
  
 
