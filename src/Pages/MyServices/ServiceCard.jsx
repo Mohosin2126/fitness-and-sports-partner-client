@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 
 const ServiceCard = ({service,services,setServices}) => {
-    const { _id, servicename,serviceimage,username,email ,price,area,description } = service;
+    const { _id, servicename,serviceimage,price,area,description } = service;
 
     const handleDelete = _id => {
         console.log(_id);
