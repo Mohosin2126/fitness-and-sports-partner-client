@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Service = ({service}) => {
    const{_id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=service
-console.log(service)
+
     return (
         <div >
             <div className="relative flex w-full h-96 flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
