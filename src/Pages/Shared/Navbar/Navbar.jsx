@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const {user, logOut} = useContext(AuthContext);
-
+console.log(user)
     const handleLogOut = () => {
         logOut()
         .then(() =>{})
@@ -125,7 +125,7 @@ Login
     </>
 
     return (
-        <div className="navbar  md:space-x-96 h-28 mb-4">
+        <div className="navbar justify-between md:justify-normal md:space-x-[340px] h-28 mb-4">
             <div >
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -136,7 +136,7 @@ Login
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
-                    <img className="h-14 w-20 border rounded-md " src="https://i.ibb.co/tKVcqLv/0e783e2aee4a11fe95bed070fbb93e30.jpg" alt="" />
+                    <img className=" h-8 w-9 rounded-lg  md:h-14 md:w-20 border md:rounded-md " src="https://i.ibb.co/tKVcqLv/0e783e2aee4a11fe95bed070fbb93e30.jpg" alt="" />
                 </Link>
             </div>
             <div className="hidden lg:flex">
@@ -148,7 +148,10 @@ Login
             <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        {
+          user ?<img src={user?.photoURL}
+          /> :<img src="https://i.ibb.co/6WLpfSy/pngtree-graphic-default-avatar-png-image-2813121.jpg"/>
+        }
         </div>
       </label>
       <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
