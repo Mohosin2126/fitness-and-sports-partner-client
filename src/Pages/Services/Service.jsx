@@ -25,10 +25,11 @@ const Service = ({service}) => {
     <h4 className="block mb-2 font-sans  antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
      {ServicePrice}
     </h4>
- <div>
-   <img src="" alt="" />
-   <p>{ServiceProvider.Name}</p>
- </div>
+    <div className="flex items-center  gap-4 ">
+      <img className="h-10 rounded-xl" src={ServiceProvider.Image}
+       alt="" />
+       <p className="font-serif ">{ServiceProvider.Name}</p>
+    </div>
 
 
  <Link to={`/services/${_id}`}> <button

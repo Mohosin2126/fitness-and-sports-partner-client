@@ -47,7 +47,7 @@ const UpdateService = () => {
 
   return (
     <div className="mt-28 mb-10">
-      <h1 className="text-center font-serif text-2xl">Update {servicename}</h1>
+      <h1 className="text-center font-serif text-2xl my-10">Update {servicename}</h1>
       <form onSubmit={handleUpdateProduct}>
         <div className="md:flex mb-8">
           <div className="form-control md:w-1/2">

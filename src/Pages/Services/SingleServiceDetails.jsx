@@ -41,16 +41,23 @@ console.log(booking)
 
 
   return (
-    <div className="relative mt-36">
+    <div className="relative mt-36 mb-10 ">
       <div className="card lg:card-side bg-base-100 shadow-xl">
   <figure><img src={ServiceImage} alt="Album"/></figure>
   <div className="card-body">
-    <h2 className="card-title">{ServiceName}</h2>
+    <h2 className="card-title font-serif font-bold text-xl">{ServiceName}</h2>
     <p>{ServiceDescription}</p>
+    <div className="flex items-center  gap-4 ">
+      <img className="h-10 rounded-xl" src={ServiceProvider.Image}
+       alt="" />
+       <p className="font-serif ">{ServiceProvider.Name}</p>
+    </div>
+    <p className="font-serif mt-4 "> Price: {ServicePrice}</p>
+
     
       <div className="mt-10">
       <div>
-<button className="btn" onClick={()=>document.getElementById('my_modal_5').showModal()}>Book Now</button>
+<button className="btn btn-outline btn-sm btn-secondary" onClick={()=>document.getElementById('my_modal_5').showModal()}>Book Now</button>
 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
 <div className="modal-box">
 <form onSubmit={handlePurchaseProduct} >

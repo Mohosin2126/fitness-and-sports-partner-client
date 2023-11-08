@@ -41,7 +41,7 @@ body:JSON.stringify(service)
     return (
         <div className="mt-28 mb-10">
 
-            <h1 className="text-center font-serif text-2xl ">Add a Product</h1>
+            <h1 className="text-center font-serif text-2xl my-10">Add a Service</h1>
            <form onSubmit={handleAddProduct} >
 
 <div className="md:flex mb-8">
@@ -112,7 +112,7 @@ body:JSON.stringify(service)
   </div>
  
 </div>
-<input type="submit" value="Add Button" className="btn btn-block" />
+<input type="submit" value="Add Service" className="btn btn-block" />
 
 </form>
         </div>

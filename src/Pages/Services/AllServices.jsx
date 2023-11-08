@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 
 
 const AllServices = ({allservice}) => {
-    const{_id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=allservice
+    const{_id,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=allservice
     return (
         <div>
-             <div className=" flex flex-col h-56 lg:flex-row">
-    <img src={ServiceImage} className="w-96 h-56 rounded-lg shadow-2xl" />
+             <div className=" flex flex-col h-60 lg:flex-row">
+    <img src={ServiceImage} className="w-72 h-60 shadow-2xl rounded-lg" />
     <div className=" bg-slate-800">
       <h1 className="text-xl  font-bold font-serif ml-4">{ServiceName}</h1>
-    <div className="flex ">
-        {/* <img src={ServiceProvider.Name} alt="" /> */}
-    <h4 className="text-red-400 ml-4">{ServiceProvider.Name}</h4>
-    <h4 className="text-red-400 ml-4">{ServiceProvider.Name}</h4>
+      <div className="flex items-center ml-4 mt-3 gap-4 ">
+      <img className="h-10 rounded-xl" src={ServiceProvider.Image}
+       alt="" />
+       <p className="font-serif ">{ServiceProvider.Name}</p>
     </div>
       <p className="py-6 ml-4">{ServiceDescription}</p>
       <p className="ml-4">{ServicePrice}</p>

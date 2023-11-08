@@ -10,7 +10,7 @@ const services=useLoaderData([])
 
 const [isShow, setIsShow] = useState(false);
     return (
-        <div className="relative mt-36">
+        <div className="relative mt-36 mb-10">
          <div>
             <div className="hero h-96 mt-5" style={{backgroundImage: 'url(https://i.ibb.co/Vq8xx53/slider1.jpg)'}}>
   <div className="hero-overlay bg-opacity-50"></div>

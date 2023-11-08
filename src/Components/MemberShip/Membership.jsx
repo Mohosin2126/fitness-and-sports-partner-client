@@ -146,10 +146,10 @@ const Membership = () => {
             <div className="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-red-600 to-red-300 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
   <div className="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none border-white/10 bg-clip-border">
     <p className="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
-      standard
+      Normal
     </p>
     <h1 className="flex justify-center gap-1 mt-6 font-sans antialiased font-normal tracking-normal text-white text-7xl">
-      <span className="mt-2 text-4xl">$</span>29
+      <span className="mt-2 text-4xl">$</span>20
       <span className="self-end text-4xl">/mo</span>
     </h1>
   </div>
@@ -174,7 +174,7 @@ const Membership = () => {
           </svg>
         </span>
         <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
-          5 team members
+          15 team members
         </p>
       </li>
       <li className="flex items-center gap-4">
@@ -196,7 +196,7 @@ const Membership = () => {
           </svg>
         </span>
         <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
-          200+ components
+          100+ components
         </p>
       </li>
       <li className="flex items-center gap-4">
@@ -218,7 +218,7 @@ const Membership = () => {
           </svg>
         </span>
         <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
-          40+ built-in pages
+          20+ built-in pages
         </p>
       </li>
       <li className="flex items-center gap-4">
@@ -240,7 +240,7 @@ const Membership = () => {
           </svg>
         </span>
         <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
-          1 year free updates
+          5 month free updates
         </p>
       </li>
       <li className="flex items-center gap-4">
@@ -280,10 +280,10 @@ const Membership = () => {
             <div className="relative flex w-full max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-red-600 to-red-300 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
   <div className="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none border-white/10 bg-clip-border">
     <p className="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
-      standard
+   Student
     </p>
     <h1 className="flex justify-center gap-1 mt-6 font-sans antialiased font-normal tracking-normal text-white text-7xl">
-      <span className="mt-2 text-4xl">$</span>29
+      <span className="mt-2 text-4xl">$</span>15
       <span className="self-end text-4xl">/mo</span>
     </h1>
   </div>
@@ -308,7 +308,7 @@ const Membership = () => {
           </svg>
         </span>
         <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
-          5 team members
+          10 team members
         </p>
       </li>
       <li className="flex items-center gap-4">
@@ -330,7 +330,7 @@ const Membership = () => {
           </svg>
         </span>
         <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
-          200+ components
+          170+ components
         </p>
       </li>
       <li className="flex items-center gap-4">
@@ -352,7 +352,7 @@ const Membership = () => {
           </svg>
         </span>
         <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
-          40+ built-in pages
+          35+ built-in pages
         </p>
       </li>
       <li className="flex items-center gap-4">
