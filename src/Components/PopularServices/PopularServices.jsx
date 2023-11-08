@@ -17,7 +17,7 @@ useEffect(()=>{
         
         <div className="grid grid-cols-2 gap-5 mt-10">
             {
-                services.slice(7).map(service=><Service service={service} key={service.id}></Service>)
+                services.slice(7).map(service=><Service service={service} key={service._id}></Service>)
             }
         </div>
         <div>

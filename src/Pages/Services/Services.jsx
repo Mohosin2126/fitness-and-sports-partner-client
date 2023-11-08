@@ -31,7 +31,7 @@ const [isShow, setIsShow] = useState(false);
         </div>
         <div className="space-y-5 mt-8 mb-8">
           {
-          isShow ?services.map(allservice=><AllServices allservice={allservice} key={allservice.id}></AllServices>):services.slice(0,6).map(allservice=><AllServices allservice={allservice} key={allservice.id}></AllServices>)
+          isShow ?services.map(allservice=><AllServices allservice={allservice} key={allservice._id}></AllServices>):services.slice(0,6).map(allservice=><AllServices allservice={allservice} key={allservice._id}></AllServices>)
           }
         </div>
         {services.length >= 6 && !isShow && ( <button

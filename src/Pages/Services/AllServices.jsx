@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const AllServices = ({allservice}) => {
-    const{id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=allservice
+    const{_id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=allservice
     return (
         <div>
              <div className=" flex flex-col h-56 lg:flex-row">
@@ -16,7 +16,7 @@ const AllServices = ({allservice}) => {
     </div>
       <p className="py-6 ml-4">{ServiceDescription}</p>
       <p className="ml-4">{ServicePrice}</p>
-     <Link to={`/services/${id}`}> <button className="btn btn-outline btn-secondary btn-sm ml-4 ">View Detail</button></Link>
+     <Link to={`/services/${_id}`}> <button className="btn btn-outline btn-secondary btn-sm ml-4 ">View Detail</button></Link>
     </div>
   
   </div>
