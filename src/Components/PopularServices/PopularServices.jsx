@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const PopularServices = () => {
     const [services,setServices]=useState([])
 useEffect(()=>{
-    fetch("../../../public/data.json")
+    fetch("http://localhost:5000/services")
     .then(res=>res.json())
     .then(data=>setServices(data))
 },[])
