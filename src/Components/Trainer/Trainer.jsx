@@ -10,8 +10,8 @@ const Trainer = () => {
                 <h1 className="border w-16 border-red-500"></h1>
                 <h1 className="border  w-14"></h1>
             </div>
-            <div className="flex mt-16">
-            <div className="flex-1">
+            <div className="md:flex md:mt-16">
+            <div className="md:flex-1 flex gap-28">
             <div className="space-y-10 bg-base-200">
   <div className=" flex flex-col h-56 lg:flex-row">
     <img src="https://i.ibb.co/R34BzJ5/fit-for-court-domination-your-ultimate-basketball-trainer-header-v2-960x540.jpg" className="w-96  h-56 rounded-lg shadow-2xl" />
@@ -22,7 +22,7 @@ const Trainer = () => {
 
     </div>
   </div>
-  <div className=" flex flex-col h-56 lg:flex-row">
+  <div className="mt-28 flex flex-col h-56 lg:flex-row">
     <img src="https://i.ibb.co/JtByS2Y/bodybuilding-specialist-mobile-hero-image-2x.jpg" className="w-96 h-56 rounded-lg shadow-2xl" />
     <div className=" bg-slate-800">
       <h1 className="text-xl  font-bold font-serif ml-4">Rock</h1>
@@ -34,7 +34,7 @@ const Trainer = () => {
 </div>
  
             </div>
-            <div className="flex-1 ml-10">
+            <div className="md:flex-1 md:ml-10">
             <div className="collapse collapse-arrow bg-base-200">
   <input type="radio" name="my-accordion-2" checked="checked" /> 
   <div className="collapse-title text-xl font-medium">

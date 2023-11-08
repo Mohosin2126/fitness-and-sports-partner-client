@@ -8,12 +8,12 @@ const UpComingEvents = () => {
     return (
         <div className="mt-12">
             <h1 className="text-2xl font-semibold font-serif text-center">Upcoming Events </h1>
-            <div className="flex w-40 mx-auto mt-4">
+            <div className="flex w-40 mx-auto ">
                 <h1 className="border  w-14"></h1>
                 <h1 className="border w-16 border-red-500"></h1>
                 <h1 className="border  w-14"></h1>
             </div>
-            <div className="grid grid-cols-3 mt-16">
+            <div className="grid md:grid-cols-3 w-96 gap-5 md:w-full mx-auto mt-16">
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
   <figure><img className="h-56" src="https://i.ibb.co/5FrWZWw/wallpapersden-com-blonde-women-weightlifting-1920x1080.jpg" alt="Shoes" /></figure>
   <div>

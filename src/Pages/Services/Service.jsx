@@ -6,7 +6,7 @@ const Service = ({service}) => {
 
     return (
         <div >
-            <div className="relative flex w-full h-96 flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex w-full md:h-96 flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
   <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
     <img
       src={ServiceImage}

@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <div className="hero min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/tPfT5Lz/1065702.jpg)'}}>
+        <div className="hero h-[600px] md:min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/tPfT5Lz/1065702.jpg)'}}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="">
