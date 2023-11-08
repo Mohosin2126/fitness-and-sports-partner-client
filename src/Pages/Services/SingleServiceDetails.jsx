@@ -19,10 +19,20 @@ const handlePurchaseProduct = e => {
   const price = form.price.value;
   const specialinstruction = form.specialinstruction.value;
   
-  const services={servicename,serviceprovideremail,serviceimage,useremail,date ,price,specialinstruction,service:_id}
-console.log(services)
+  const booking={servicename,serviceprovideremail,serviceimage,useremail,date ,price,specialinstruction,service_id:_id}
+console.log(booking)
  
-  
+  fetch('http://localhost:5000/bookings',{
+    method:'POST',
+    headers:{
+'content-type':'application/json'
+    },
+    body:JSON.stringify(booking)
+  })
+  .then(res=>res.json())
+  .then(data=>{
+    console.log(data)
+  })
   
 }
 
