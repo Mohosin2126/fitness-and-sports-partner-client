@@ -16,7 +16,21 @@ const AddServices = () => {
         const description= form.description.value;
       
       const service={servicename,serviceimage,username,email ,price,area,description}
-      console.log(service)
+      form.reset(" ")
+  fetch('http://localhost:5000/addservices',{
+method:"POST",
+headers:{
+    'content-type':"application/json"
+},
+body:JSON.stringify(service)
+  })
+  .then(res=>res.json())
+  .then(data=>{
+    console.log(data)
+  })
+ 
+
+
        
       }
       
