@@ -14,37 +14,42 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import SingleServiceDetails from './Pages/Services/SingleServiceDetails';
 import MySchedules from './Pages/MySchedules/MySchedules';
+import AddServices from './Pages/AddServices/AddServices';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
-    errorElement:<Error></Error>,
-    children:[
+    errorElement: <Error></Error>,
+    children: [
       {
-        path:"/",
-        element:<Home></Home>,
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path:"/services",
-        element:<Services></Services>,
-        loader:()=>fetch("http://localhost:5000/services"),
+        path: "/services",
+        element: <Services></Services>,
+        loader: () => fetch("http://localhost:5000/services"),
       },
       {
-path:"/services/:id",
-element:<SingleServiceDetails></SingleServiceDetails>,
-loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`),
+        path: "/services/:id",
+        element: <SingleServiceDetails></SingleServiceDetails>,
+        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
       },
       {
-        path:"/login",
-        element:<Login></Login>,
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path:"/signup",
-        element:<SignUp></SignUp>,
+        path: "/signup",
+        element: <SignUp></SignUp>,
       },
       {
-path:"/myschedules",
-element:<MySchedules></MySchedules>,
+        path: "/myschedules",
+        element: <MySchedules></MySchedules>,
+      },
+      {
+        path:"/addservices",
+        element:<AddServices></AddServices>,
       }
     ]
   },

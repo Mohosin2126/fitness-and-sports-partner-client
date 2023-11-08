@@ -21,7 +21,7 @@ const Navbar = () => {
           <summary>Dashboard</summary>
           <ul className="p-2">
             <li><a>My-service</a></li>
-            <li><a>Add-services</a></li>
+            <li><Link to={"/addservices"}>Add a Service</Link></li>
            <li><Link to={"/myschedules"}>My Schedules</Link></li>
          </ul>
         </details>
