@@ -29,6 +29,7 @@ useEffect(()=>{
     }
 },[])
 const googleSignIn=(value)=>{
+    setLoading(true)
     return signInWithPopup(auth,googleProvider)
 }  
 

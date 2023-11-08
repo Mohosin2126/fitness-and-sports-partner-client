@@ -4,11 +4,17 @@ import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 
 
 const Login = () => {
-    const {signIn } = useContext(AuthContext);
+    const {signIn , googleSignIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
   
-
+    const handleGoogle=()=>{
+        googleSignIn()
+        .then(result=>{
+        console.log(result)
+            navigate(location?.state? location.state:"/")
+        })
+      } 
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
@@ -55,6 +61,11 @@ const Login = () => {
                                 <input className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
+                        <div className="form-control mt-6">
+                     <button  
+                     onClick={ handleGoogle} 
+                      className="btn btn-primary">Google Login</button>
+                 </div>
                         <p className='my-4 text-center'>New to Fitness and Sports  <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
                     </div>
                 </div>
