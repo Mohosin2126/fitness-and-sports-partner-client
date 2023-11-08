@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 const SingleServiceDetails = () => {
  const services=useLoaderData()
@@ -31,7 +32,9 @@ console.log(booking)
   })
   .then(res=>res.json())
   .then(data=>{
-    console.log(data)
+    if(data.insertedId){
+      swal("Thank you !", "You Booked the Service!", "success");
+    }
   })
   
 }
@@ -126,7 +129,7 @@ console.log(booking)
 <div className="modal-action">
 <form method="dialog">
 {/* if there is a button in form, it will close the modal */}
-{/* <button className="btn">Close</button> */}
+<button className="btn btn-secondary">Close</button>
 </form>
 </div>
 </div>
