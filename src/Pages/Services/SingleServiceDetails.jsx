@@ -14,12 +14,12 @@ const handlePurchaseProduct = e => {
   const servicename = form.servicename.value;
   const serviceprovideremail= form.serviceprovideremail.value;
   const serviceimage=form.serviceimage.value
-  const useremail = form.useremail.value;
+  const useremail = form.uesr?.useremail.value;
   const date = form.date.value;
   const price = form.price.value;
   const specialinstruction = form.specialinstruction.value;
   
-  const services={servicename,serviceprovideremail,serviceimage,useremail,date ,price,specialinstruction}
+  const services={servicename,serviceprovideremail,serviceimage,useremail,date ,price,specialinstruction,service:_id}
 console.log(services)
  
   
