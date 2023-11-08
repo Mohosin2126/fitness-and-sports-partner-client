@@ -37,6 +37,8 @@ body:JSON.stringify(service)
 
     return (
         <div className="mt-28 mb-10">
+
+            <h1 className="text-center font-serif text-2xl ">Add a Product</h1>
            <form onSubmit={handleAddProduct} >
 
 <div className="md:flex mb-8">
