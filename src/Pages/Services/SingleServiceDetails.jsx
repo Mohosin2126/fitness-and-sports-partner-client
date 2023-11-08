@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 
 const SingleServiceDetails = () => {
  const services=useLoaderData()
  const{_id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=services
+const {user}=useContext(AuthContext)
 
 const handlePurchaseProduct = e => {
   e.preventDefault();
@@ -12,11 +15,11 @@ const handlePurchaseProduct = e => {
   const serviceprovideremail= form.serviceprovideremail.value;
   const serviceimage=form.serviceimage.value
   const useremail = form.useremail.value;
-  const servicetakingdate = form.servicetakingdate.value;
+  const date = form.date.value;
   const price = form.price.value;
   const specialinstruction = form.specialinstruction.value;
   
-  const services={servicename,serviceprovideremail,serviceimage,useremail,servicetakingdate ,price,specialinstruction}
+  const services={servicename,serviceprovideremail,serviceimage,useremail,date ,price,specialinstruction}
 console.log(services)
  
   
@@ -45,7 +48,7 @@ console.log(services)
           <span className="label-text">Service Name</span>
       </label>
       <label className="input-group">
-          <input  type="text" name="servicename" placeholder="servicename" className="input input-bordered w-full" />
+          <input  type="text" name="servicename" placeholder="servicename" defaultValue={ServiceName}  readOnly className="input input-bordered w-full" />
       </label>
   </div>
   <div className="form-control md:w-1/2 ml-4">
@@ -53,7 +56,7 @@ console.log(services)
           <span className="label-text">Service Image</span>
       </label>
       <label className="input-group">
-          <input type="text" name="serviceimage" placeholder="Service Image" className="input input-bordered w-full" />
+          <input type="text" name="serviceimage" defaultValue={ServiceImage} readOnly placeholder="Service Image" className="input input-bordered w-full" />
       </label>
   </div>
 </div>
@@ -64,7 +67,7 @@ console.log(services)
           <span className="label-text">Service Provider email</span>
       </label>
       <label className="input-group">
-          <input type="text" name="serviceprovideremail" placeholder="Service Provider email" className="input input-bordered w-full" />
+          <input type="text" name="serviceprovideremail" placeholder="Service Provider email" readOnly className="input input-bordered w-full" />
       </label>
   </div>
   <div className="form-control md:w-1/2 ml-4">
@@ -72,7 +75,7 @@ console.log(services)
           <span className="label-text">User email</span>
       </label>
       <label className="input-group">
-          <input  type="text" name="useremail" placeholder="User email" className="input input-bordered w-full" />
+          <input  type="text" name="useremail" placeholder="User email" defaultValue={user?.email} readOnly className="input input-bordered w-full" />
       </label>
   </div>
 </div>
@@ -83,7 +86,7 @@ console.log(services)
           <span className="label-text">Service Taking Date</span>
       </label>
       <label className="input-group">
-          <input  type="date" name="servicetakingdate" placeholder="Service Taking Date" className="input input-bordered w-full" />
+          <input  type="date" name="date" placeholder="Service Taking Date" className="input input-bordered w-full" />
       </label>
   </div>
   <div className="form-control md:w-1/2 ml-4">
@@ -91,7 +94,7 @@ console.log(services)
           <span className="label-text">Price</span>
       </label>
       <label className="input-group">
-          <input  type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
+          <input  type="text" name="price" placeholder="Price"  defaultValue={ServicePrice} readOnly className="input input-bordered w-full" />
       </label>
   </div>
 </div>
