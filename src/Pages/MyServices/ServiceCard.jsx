@@ -16,6 +16,12 @@ const ServiceCard = ({service}) => {
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
         })
+        .then((result) => {
+            if (result.isConfirmed){
+                console.log("delete confirm ")
+            }
+        
+        })
 
 
               
