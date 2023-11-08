@@ -96,7 +96,7 @@ console.log(booking)
           <span className="label-text">Service Taking Date</span>
       </label>
       <label className="input-group">
-          <input  type="date" name="date" placeholder="Service Taking Date" className="input input-bordered w-full" />
+          <input  type="date" required name="date" placeholder="Service Taking Date" className="input input-bordered w-full" />
       </label>
   </div>
   <div className="form-control md:w-1/2 ml-4">
@@ -115,7 +115,7 @@ console.log(booking)
           <span className="label-text">Special instruction</span>
       </label>
       <label className="input-group">
-          <input  type="text" name="specialinstruction" placeholder="Special instruction" className="input input-bordered w-full" />
+          <input  type="text" required name="specialinstruction" placeholder="Special instruction" className="input input-bordered w-full" />
       </label>
   </div>
   
