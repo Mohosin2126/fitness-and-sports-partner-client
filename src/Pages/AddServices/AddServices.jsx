@@ -1,31 +1,28 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 
 
 const AddServices = () => {
-
+    const { user }=useContext(AuthContext)
     const handleAddProduct = e => {
         e.preventDefault();
-      
         const form = e.target;
         const servicename = form.servicename.value;
-        const serviceprovideremail= form.serviceprovideremail.value;
         const serviceimage=form.serviceimage.value
-        const email = form.email.value;
-        const date = form.date.value;
+        const username= form.username.value;
+        const email =  user?.email;
         const price = form.price.value;
-        const specialinstruction = form.specialinstruction.value;
-        
-        const booking={servicename,serviceprovideremail,serviceimage,email,date ,price,specialinstruction,service_id:_id}
-      console.log(booking)
+        const area=form.area.value
+        const description= form.description.value;
+      
+      const service={servicename,serviceimage,username,email ,price,area,description}
+      console.log(service)
        
-        
-        
       }
       
 
-
-
     return (
-        <div className="mt-28">
+        <div className="mt-28 mb-10">
            <form onSubmit={handleAddProduct} >
 
 <div className="md:flex mb-8">
@@ -50,10 +47,10 @@ const AddServices = () => {
 <div className="md:flex mb-8">
   <div className="form-control md:w-1/2">
       <label className="label">
-          <span className="label-text">Service Provider email</span>
+          <span className="label-text">User Name</span>
       </label>
       <label className="input-group">
-          <input type="text" name="serviceprovideremail" placeholder="Service Provider email"  className="input input-bordered w-full" />
+          <input type="text" name="username" placeholder="User Name" defaultValue={user?.displayName}  readOnly className="input input-bordered w-full" />
       </label>
   </div>
   <div className="form-control md:w-1/2 ml-4">
@@ -61,7 +58,7 @@ const AddServices = () => {
           <span className="label-text">User email</span>
       </label>
       <label className="input-group">
-          <input  type="text" name="useremail" placeholder="User email"  className="input input-bordered w-full" />
+          <input  type="email" name="email" placeholder="User email" defaultValue={user?.email} readOnly className="input input-bordered w-full" />
       </label>
   </div>
 </div>
@@ -69,18 +66,18 @@ const AddServices = () => {
 <div className="md:flex mb-8">
   <div className="form-control md:w-1/2">
       <label className="label">
-          <span className="label-text">Service Taking Date</span>
+          <span className="label-text">Price </span>
       </label>
       <label className="input-group">
-          <input  type="date" required name="date" placeholder="Service Taking Date" className="input input-bordered w-full" />
+          <input  type="text" required name="price" placeholder="Price" className="input input-bordered w-full" />
       </label>
   </div>
   <div className="form-control md:w-1/2 ml-4">
       <label className="label">
-          <span className="label-text">Price</span>
+          <span className="label-text">Service Area</span>
       </label>
       <label className="input-group">
-          <input  type="text" name="price" placeholder="Price"  className="input input-bordered w-full" />
+          <input  type="text" name="area" placeholder="Service Area"  className="input input-bordered w-full" />
       </label>
   </div>
 </div>
@@ -88,15 +85,15 @@ const AddServices = () => {
 <div className=" mb-8">
   <div className="form-control w-full">
       <label className="label">
-          <span className="label-text">Special instruction</span>
+          <span className="label-text">Description</span>
       </label>
       <label className="input-group">
-          <input  type="text" required name="specialinstruction" placeholder="Special instruction" className="input input-bordered w-full" />
+          <input  type="text" required name="description" placeholder="Description" className="input input-bordered w-full" />
       </label>
   </div>
-  
+ 
 </div>
-<input type="submit" value="Purchase" className="btn btn-block" />
+<input type="submit" value="Add Button" className="btn btn-block" />
 
 </form>
         </div>
