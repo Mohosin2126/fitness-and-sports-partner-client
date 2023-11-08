@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
-const ServiceCard = ({service}) => {
+const ServiceCard = ({service,services,setServices}) => {
     const { _id, servicename,serviceimage,username,email ,price,area,description } = service;
 
     const handleDelete = _id => {
@@ -34,6 +34,8 @@ fetch(`http://localhost:5000/addservices/${_id}`,{
             'Your Service has been deleted.',
             'success'
         )
+        const remaining =services.filter(ser=> ser._id !== _id)
+        setServices(remaining)
     }
 })
 
@@ -61,7 +63,7 @@ fetch(`http://localhost:5000/addservices/${_id}`,{
             <div className="card-actions justify-end">
                 <div className="btn-group btn-group-vertical space-y-4">
                     <button className="btn">View</button>
-                    <Link >
+                    <Link to={`/updateservice/${_id}`}>
                     <button className="btn">Edit</button>
                     </Link>
                     <button onClick={()=>handleDelete(_id)} className="btn bg-orange-500">X</button>

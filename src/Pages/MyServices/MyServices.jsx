@@ -17,6 +17,8 @@ const [services,setServices]=useState(loadedservices)
           services.map(service=><ServiceCard
             key={service._id}
             service={service}
+            services={services}
+            setServices={setServices}
             ></ServiceCard>)
         }
         </div>
