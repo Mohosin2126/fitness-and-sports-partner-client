@@ -15,12 +15,12 @@ const handlePurchaseProduct = e => {
   const servicename = form.servicename.value;
   const serviceprovideremail= form.serviceprovideremail.value;
   const serviceimage=form.serviceimage.value
-  const useremail = form.uesr?.useremail.value;
+  const email = user?.email;
   const date = form.date.value;
   const price = form.price.value;
   const specialinstruction = form.specialinstruction.value;
   
-  const booking={servicename,serviceprovideremail,serviceimage,useremail,date ,price,specialinstruction,service_id:_id}
+  const booking={servicename,serviceprovideremail,serviceimage,email,date ,price,specialinstruction,service_id:_id}
 console.log(booking)
  
   fetch('http://localhost:5000/bookings',{

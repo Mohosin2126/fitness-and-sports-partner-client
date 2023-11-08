@@ -13,6 +13,7 @@ import Services from './Pages/Services/Services';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import SingleServiceDetails from './Pages/Services/SingleServiceDetails';
+import MySchedules from './Pages/MySchedules/MySchedules';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +41,10 @@ loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`),
       {
         path:"/signup",
         element:<SignUp></SignUp>,
+      },
+      {
+path:"/myschedules",
+element:<MySchedules></MySchedules>,
       }
     ]
   },

@@ -22,7 +22,7 @@ const Navbar = () => {
           <ul className="p-2">
             <li><a>My-service</a></li>
             <li><a>Add-services</a></li>
-            <li><a>My-schedules</a></li>
+           <li><Link to={"/myschedules"}>My Schedules</Link></li>
          </ul>
         </details>
       </li>
