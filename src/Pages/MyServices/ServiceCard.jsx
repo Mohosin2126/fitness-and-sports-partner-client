@@ -1,11 +1,28 @@
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const ServiceCard = ({service}) => {
-    console.log(service)
     const { _id, servicename,serviceimage,username,email ,price,area,description } = service;
 
+    const handleDelete = _id => {
+        console.log(_id);
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        })
 
+
+              
+
+            
+        }
+    
 
     return (
         <div className="card card-side bg-base-100 shadow-xl">
@@ -23,7 +40,7 @@ const ServiceCard = ({service}) => {
                     <Link >
                     <button className="btn">Edit</button>
                     </Link>
-                    <button className="btn bg-orange-500">X</button>
+                    <button onClick={()=>handleDelete(_id)} className="btn bg-orange-500">X</button>
                 </div>
             </div>
         </div>
