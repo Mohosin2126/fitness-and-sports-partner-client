@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const {user, logOut} = useContext(AuthContext);
@@ -13,16 +13,94 @@ const Navbar = () => {
 
 
     const navItems = <>
-        <li><Link to="/">Home</Link> </li>
-        <li> <Link to="/services">Services</Link> </li>
+
+<li>
+<NavLink
+  to="/"
+  style={({ isActive, isPending, isTransitioning }) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      color: isPending ? "red" : "red",
+      viewTransitionName: isTransitioning ? "slide" : "",
+    };
+  }}
+>
+Home
+</NavLink>
+</li>
+<li>
+<NavLink
+  to="/services"
+  style={({ isActive, isPending, isTransitioning }) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      color: isPending ? "red" : "red",
+      viewTransitionName: isTransitioning ? "slide" : "",
+    };
+  }}
+>
+Services
+</NavLink>
+</li>
+
+
+
+
+
+
+        {/* <li><Link to="/">Home</Link> </li>
+        <li> <Link to="/services">Services</Link> </li> */}
         { user?.email ?  <>
             <li tabIndex={0}>
         <details>
           <summary>Dashboard</summary>
           <ul className="p-2">
-          <li><Link to={"/myschedules"}>My Schedules</Link></li>
+          <li>
+<NavLink
+  to={"/myschedules"}
+  style={({ isActive, isPending, isTransitioning }) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      color: isPending ? "red" : "red",
+      viewTransitionName: isTransitioning ? "slide" : "",
+    };
+  }}
+>
+My Schedules
+</NavLink>
+</li>
+
+<li>
+<NavLink
+  to={"/addservices"}
+  style={({ isActive, isPending, isTransitioning }) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      color: isPending ? "red" : "red",
+      viewTransitionName: isTransitioning ? "slide" : "",
+    };
+  }}
+>
+Add a Service
+</NavLink>
+</li>
+<li>
+<NavLink
+ to={"/myservices"}
+  style={({ isActive, isPending, isTransitioning }) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      color: isPending ? "red" : "red",
+      viewTransitionName: isTransitioning ? "slide" : "",
+    };
+  }}
+>
+My Service
+</NavLink>
+</li>
+          {/* <li><Link to={"/myschedules"}>My Schedules</Link></li>
             <li><Link to={"/addservices"}>Add a Service</Link></li>
-            <li><Link to={"/myservices"}>My Service</Link></li>
+            <li><Link to={"/myservices"}>My Service</Link></li> */}
         
          </ul>
         </details>
@@ -30,7 +108,19 @@ const Navbar = () => {
            
             <li><button onClick={handleLogOut}>Log out</button></li>
         </> 
-        : <li> <Link to="/login">Login</Link> </li>
+         : <li> <NavLink
+to="/login"
+  style={({ isActive, isPending, isTransitioning }) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      color: isPending ? "red" : "red",
+      viewTransitionName: isTransitioning ? "slide" : "",
+    };
+  }}
+>
+Login
+</NavLink>
+</li>
        }
     </>
 
