@@ -19,6 +19,24 @@ const ServiceCard = ({service}) => {
         .then((result) => {
             if (result.isConfirmed){
                 console.log("delete confirm ")
+
+
+
+fetch(`http://localhost:5000/addservices/${_id}`,{
+    method: 'DELETE'
+})
+.then(res=>res.json())
+.then(data=>{
+    console.log(data)
+    if(data.deletedCount>0){
+        Swal.fire(
+            'Deleted!',
+            'Your Service has been deleted.',
+            'success'
+        )
+    }
+})
+
             }
         
         })
