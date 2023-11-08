@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Service = ({service}) => {
@@ -30,8 +31,7 @@ const Service = ({service}) => {
  </div>
 
 
-    <a className="inline-block" href="#">
-      <button
+ <Link to={`/services/${id}`}>  <button
         className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-pink-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         type="button"
       >
@@ -51,8 +51,9 @@ const Service = ({service}) => {
             d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
           ></path>
         </svg>
-      </button>
-    </a>
+      </button> </Link>
+    
+    
   </div>
 </div>
         </div>

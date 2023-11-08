@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import AllServices from "./AllServices";
+import { useState } from "react";
 
 
 
@@ -7,6 +8,7 @@ const Services = () => {
 
 const services=useLoaderData([])
 
+const [isShow, setIsShow] = useState(false);
     return (
         <div className="relative mt-36">
          <div>
@@ -29,10 +31,16 @@ const services=useLoaderData([])
         </div>
         <div className="space-y-5 mt-8 mb-8">
           {
-            services.map(allservice=><AllServices allservice={allservice} key={allservice.id}></AllServices>)
+          isShow ?services.map(allservice=><AllServices allservice={allservice} key={allservice.id}></AllServices>):services.slice(0,6).map(allservice=><AllServices allservice={allservice} key={allservice.id}></AllServices>)
           }
         </div>
-        <button className="btn btn-outline btn-secondary flex mx-auto">Show All</button>
+        {services.length >= 6 && !isShow && ( <button
+                            className="btn btn-outline flex mx-auto btn-secondary btn-sm  "
+                            onClick={() => setIsShow(true)}
+                        >
+                            View All 
+                        </button>
+                    )}
         </div>
     );
 };
