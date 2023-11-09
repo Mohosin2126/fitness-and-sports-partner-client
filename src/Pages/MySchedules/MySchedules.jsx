@@ -18,7 +18,7 @@ useEffect(()=>{
 
     return (
         <div className="relative mt-28">
-            hello there this is me 
+       <h1>{bookings.length}</h1>
         </div>
     );
 };

@@ -6,9 +6,25 @@ import { useState } from "react";
 
 const Services = () => {
 
-const services=useLoaderData([])
+const loadedServices=useLoaderData([])
+
+const[services,setServices]=useState(loadedServices)
 
 const [isShow, setIsShow] = useState(false);
+const [searchText,setSearchText]=useState("")
+
+const handleSearchButton=()=>{
+
+  fetch(`http://localhost:5000/servicesbytext/${searchText}`)
+  .then(res=>res.json())
+.then(data=>setServices(data))
+
+}
+
+
+
+
+
     return (
         <div className="relative mt-36 mb-10">
          <div>
@@ -18,8 +34,8 @@ const [isShow, setIsShow] = useState(false);
     <div className="max-w-md">
       <h1 className="mb-5 text-2xl font-bold text-center ">Everything You Want All Are Here !</h1>
       <div className="flex ">
-      <input type="text" placeholder="Type here" className="input input-bordered input-accent w-full max-w-xs " />
-      <button className="btn btn-neutral bg-red-500 ">Search</button>
+      <input onBlur={(e)=>setSearchText(e.target.value)} type="text" placeholder="Type here" className="input input-bordered input-accent w-full max-w-xs " />
+      <button onClick={handleSearchButton} className="btn btn-neutral bg-red-500 ">Search</button>
       </div>
     </div>
   </div>

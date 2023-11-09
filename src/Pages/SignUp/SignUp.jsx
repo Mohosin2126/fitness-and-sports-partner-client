@@ -1,12 +1,13 @@
 import { useContext } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 
 
 const SignUp = () => {
    const { createUser }=useContext(AuthContext)
-
+   const location = useLocation();
+   const navigate = useNavigate();
    const handleSignUp=e=>{
     e.preventDefault()
    const form=e.target 
@@ -18,7 +19,7 @@ const SignUp = () => {
 
    createUser(email, password)
    .then(result => {
-     console.log(result.user)
+    navigate(location?.state? location.state:"/")
    })
    .catch(error => console.log(error))
 
