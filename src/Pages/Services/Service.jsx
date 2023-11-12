@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Service = ({service}) => {
-   const{_id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=service
+   const{_id,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceImage}=service
 
     return (
         <div  data-aos="fade-up"

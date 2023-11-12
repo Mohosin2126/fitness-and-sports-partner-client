@@ -5,7 +5,7 @@ import swal from "sweetalert";
 
 const SingleServiceDetails = () => {
  const services=useLoaderData()
- const{_id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=services
+ const{_id,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceImage}=services
 const {user}=useContext(AuthContext)
 
 const handlePurchaseProduct = e => {

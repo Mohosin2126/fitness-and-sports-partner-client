@@ -1,6 +1,6 @@
 
 const MyBookings = ({booking}) => {
-    const{_id,servicename,serviceDescription, price,specialinstruction
+    const{servicename, specialinstruction
 ,        serviceimage}=booking
     return (
         <div>

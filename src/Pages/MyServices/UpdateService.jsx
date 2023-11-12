@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 const UpdateService = () => {
   const loadedService = useLoaderData();
-  const { _id, servicename, serviceimage, username, email, price, area, description } =
+  const { _id, servicename, serviceimage, price, area, description } =
     loadedService;
 
   const { user } = useContext(AuthContext);
