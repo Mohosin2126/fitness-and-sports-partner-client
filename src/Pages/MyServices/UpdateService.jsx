@@ -22,9 +22,9 @@ const UpdateService = () => {
     };
     form.reset();
 
-    console.log(updatedService);
+    
 
-    fetch(`http://localhost:5000/addservices/${_id}`, {
+    fetch(`https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/addservices/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -33,7 +33,7 @@ const UpdateService = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+      
         if (data.modifiedCount > 0) {
           Swal.fire({
             title: "Success!",

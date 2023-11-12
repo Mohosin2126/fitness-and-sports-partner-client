@@ -5,7 +5,8 @@ const Service = ({service}) => {
    const{_id,Category,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=service
 
     return (
-        <div >
+        <div  data-aos="fade-up"
+        data-aos-duration="1000">
             <div className="relative flex w-full md:h-96 flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
   <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
     <img

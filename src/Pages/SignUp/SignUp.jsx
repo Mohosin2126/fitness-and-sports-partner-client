@@ -2,6 +2,7 @@ import { useContext } from "react";
 
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 
 const SignUp = () => {
@@ -11,18 +12,22 @@ const SignUp = () => {
    const handleSignUp=e=>{
     e.preventDefault()
    const form=e.target 
-   const name=form.name.value 
    const email=form.email.value 
    const password =form.password.value 
-   const photourl=form.PhotoURL.value
-   console.log(name,email,password,photourl)
+
+  
+   if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password)) {
+       
+    return (swal("Error!", "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character", "error"))
+} 
 
    createUser(email, password)
    .then(result => {
     navigate(location?.state? location.state:"/")
+    return (swal("Success!", "Registration Successful", "success"))
    })
    .catch(error => console.log(error))
-
+   return (swal("Error!", "Already User", "error"))
 
    }
 

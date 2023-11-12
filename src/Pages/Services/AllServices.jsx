@@ -14,7 +14,8 @@ const AllServices = ({allservice}) => {
        alt="" />
        <p className="font-serif ">{ServiceProvider.Name}</p>
     </div>
-      <p className="py-6 ml-4">{ServiceDescription}</p>
+      <p className="mt-3 ml-4">{ServiceDescription}</p>
+      <p className="font-serif ml-4 mt-2">{ServiceArea}</p>
       <p className="ml-4">{ServicePrice}</p>
      <Link to={`/services/${_id}`}> <button className="btn btn-outline btn-secondary btn-sm ml-4 ">View Detail</button></Link>
     </div>

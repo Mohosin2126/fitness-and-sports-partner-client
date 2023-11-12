@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const {user, logOut} = useContext(AuthContext);
-console.log(user)
+
     const handleLogOut = () => {
         logOut()
         .then(() =>{})
@@ -14,7 +14,7 @@ console.log(user)
 
     const navItems = <>
 
-<li>
+<li className="font-serif text-base">
 <NavLink
   to="/"
   style={({ isActive, isPending, isTransitioning }) => {
@@ -28,7 +28,7 @@ console.log(user)
 Home
 </NavLink>
 </li>
-<li>
+<li className="font-serif text-base">
 <NavLink
   to="/services"
   style={({ isActive, isPending, isTransitioning }) => {
@@ -48,14 +48,13 @@ Services
 
 
 
-        {/* <li><Link to="/">Home</Link> </li>
-        <li> <Link to="/services">Services</Link> </li> */}
+       
         { user?.email ?  <>
             <li tabIndex={0}>
         <details>
-          <summary>Dashboard</summary>
+          <summary className="font-serif text-base">Dashboard</summary>
           <ul className="p-2">
-          <li>
+          <li className="font-serif text-base">
 <NavLink
   to={"/myschedules"}
   style={({ isActive, isPending, isTransitioning }) => {
@@ -70,7 +69,7 @@ My Schedules
 </NavLink>
 </li>
 
-<li>
+<li className="font-serif text-base">
 <NavLink
   to={"/addservices"}
   style={({ isActive, isPending, isTransitioning }) => {
@@ -84,7 +83,7 @@ My Schedules
 Add a Service
 </NavLink>
 </li>
-<li>
+<li className="font-serif text-base">
 <NavLink
  to={"/myservices"}
   style={({ isActive, isPending, isTransitioning }) => {
@@ -98,17 +97,15 @@ Add a Service
 My Service
 </NavLink>
 </li>
-          {/* <li><Link to={"/myschedules"}>My Schedules</Link></li>
-            <li><Link to={"/addservices"}>Add a Service</Link></li>
-            <li><Link to={"/myservices"}>My Service</Link></li> */}
+        
         
          </ul>
         </details>
       </li>
            
-            <li><button onClick={handleLogOut}>Log out</button></li>
+            <li className="font-serif text-base"><button onClick={handleLogOut}>Log out</button></li>
         </> 
-         : <li> <NavLink
+         : <li className="font-serif text-base"> <NavLink
 to="/login"
   style={({ isActive, isPending, isTransitioning }) => {
     return {
@@ -156,13 +153,13 @@ Login
       </label>
       <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
         <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
+          <div className="justify-between">
+            <Link  to={"/myservices"}
+>Profile</Link>
+            <span className="badge">New Member</span>
+          </div>
         </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+     
       </ul>
     </div>
             </div>

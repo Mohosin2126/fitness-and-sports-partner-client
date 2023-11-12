@@ -1,6 +1,5 @@
 
 const MyBookings = ({booking}) => {
-    console.log(booking)
     const{_id,servicename,serviceDescription, price,specialinstruction
 ,        serviceimage}=booking
     return (

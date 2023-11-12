@@ -13,7 +13,7 @@ const handlePurchaseProduct = e => {
 
   const form = e.target;
   const servicename = form.servicename.value;
-  const serviceprovideremail= form.serviceprovideremail.value;
+  const serviceprovideremail= user?.email;
   const serviceimage=form.serviceimage.value
   const email = user?.email;
   const date = form.date.value;
@@ -21,9 +21,9 @@ const handlePurchaseProduct = e => {
   const specialinstruction = form.specialinstruction.value;
   
   const booking={servicename,serviceprovideremail,serviceimage,email,date ,price,specialinstruction,service_id:_id}
-console.log(booking)
+
  
-  fetch('http://localhost:5000/bookings',{
+  fetch('https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/bookings',{
     method:'POST',
     headers:{
 'content-type':'application/json'
@@ -87,7 +87,7 @@ console.log(booking)
           <span className="label-text">Service Provider email</span>
       </label>
       <label className="input-group">
-          <input type="text" name="serviceprovideremail" placeholder="Service Provider email" readOnly className="input input-bordered w-full" />
+          <input type="text" name="useremail" placeholder="Service Provider email" defaultValue={user?.email} readOnly className="input input-bordered w-full" />
       </label>
   </div>
   <div className="form-control md:w-1/2 ml-4">

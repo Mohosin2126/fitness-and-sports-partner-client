@@ -15,7 +15,7 @@ const [searchText,setSearchText]=useState("")
 
 const handleSearchButton=()=>{
 
-  fetch(`http://localhost:5000/servicesbytext/${searchText}`)
+  fetch(`https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/servicesbytext/${searchText}`)
   .then(res=>res.json())
 .then(data=>setServices(data))
 
@@ -54,7 +54,7 @@ const handleSearchButton=()=>{
                             className="btn btn-outline flex mx-auto btn-secondary btn-sm  "
                             onClick={() => setIsShow(true)}
                         >
-                            View All 
+                            More 
                         </button>
                     )}
         </div>

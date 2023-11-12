@@ -18,7 +18,7 @@ const AddServices = () => {
       
       const service={servicename,serviceimage,username,email ,price,area,description}
       form.reset(" ")
-  fetch('http://localhost:5000/addservices',{
+  fetch('https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/addservices',{
 method:"POST",
 headers:{
     'content-type':"application/json"

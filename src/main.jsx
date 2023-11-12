@@ -31,13 +31,13 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services></Services>,
-        loader: () => fetch("http://localhost:5000/services"),
+        loader: () => fetch("https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/services"),
       },
       {
         path: "/services/:id",
         element:<PrivateRoute> <SingleServiceDetails></SingleServiceDetails></PrivateRoute>
         ,
-        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+        loader: ({ params }) => fetch(`https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/services/${params.id}`),
       },
       {
         path: "/login",
@@ -59,12 +59,12 @@ const router = createBrowserRouter([
       {
         path:"/myservices",
         element:<PrivateRoute><MyServices></MyServices></PrivateRoute>,
-        loader:()=>fetch("http://localhost:5000/addservices"),
+        
       },
       {
         path:"/updateservice/:id",
         element:<UpdateService></UpdateService>,
-        loader:({params})=>fetch(`http://localhost:5000/addservices/${params.id}`)
+        loader:({params})=>fetch(`https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/addservices/${params.id}`)
       }
     ]
   },

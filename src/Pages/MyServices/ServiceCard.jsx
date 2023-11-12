@@ -6,7 +6,7 @@ const ServiceCard = ({service,services,setServices}) => {
     const { _id, servicename,serviceimage,price,area,description } = service;
 
     const handleDelete = _id => {
-        console.log(_id);
+    
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -18,16 +18,15 @@ const ServiceCard = ({service,services,setServices}) => {
         })
         .then((result) => {
             if (result.isConfirmed){
-                console.log("delete confirm ")
+              
 
 
 
-fetch(`http://localhost:5000/addservices/${_id}`,{
+fetch(`https://fitness-and-sports-partner-server-8oww2jmsq.vercel.app/addservices/${_id}`,{
     method: 'DELETE'
 })
 .then(res=>res.json())
 .then(data=>{
-    console.log(data)
     if(data.deletedCount>0){
         Swal.fire(
             'Deleted!',
@@ -66,7 +65,7 @@ fetch(`http://localhost:5000/addservices/${_id}`,{
                     <Link to={`/updateservice/${_id}`}>
                     <button className="btn">Edit</button>
                     </Link>
-                    <button onClick={()=>handleDelete(_id)} className="btn bg-orange-500">X</button>
+                    <button onClick={()=>handleDelete(_id)} className="btn btn-warning">X</button>
                 </div>
             </div>
         </div>

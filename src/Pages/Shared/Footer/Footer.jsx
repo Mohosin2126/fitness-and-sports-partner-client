@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <footer className="footer p-10 bg-base-200 text-base-content ">
             <div>
-                <img src="" alt="" />
+                <img className="h-10 w-10 rounded-md" src="https://i.ibb.co/tKVcqLv/0e783e2aee4a11fe95bed070fbb93e30.jpg" alt="" />
                 <p>Fitness And Sports Partner  Ltd.<br /> since 2005</p>
             </div>
             <div>
