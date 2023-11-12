@@ -6,7 +6,8 @@ const UpComingEvents = () => {
     const date=moment().format('MMMM Do YYYY');
     const time=moment().format(' h:mm:ss a');
     return (
-        <div className="mt-12">
+        <div className="mt-12" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <h1 className="text-2xl font-semibold font-serif text-center">Upcoming Events </h1>
             <div className="flex w-40 mx-auto ">
                 <h1 className="border  w-14"></h1>
