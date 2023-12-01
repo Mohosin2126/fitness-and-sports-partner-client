@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 const Membership = () => {
     return (
-
-   
-
-
         <div className="mt-16 mb-10"> 
         <h1 className="text-center font-serif font-extrabold text-2xl ">Membership Pricing</h1>
         <div className="flex w-40 mx-auto mt-4">
