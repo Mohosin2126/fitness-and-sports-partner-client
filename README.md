@@ -8,4 +8,4 @@
   
   - The project utilizes packages such as React Leaflet for map integration, Lottie-react for animations, and react-elastic-carousel for carousel functionality, providing users with an enhanced and interactive experience while navigating the website.
 
-  [LiveLink]()
+  [LiveLink](https://illustrious-zabaione-bf0b7f.netlify.app/)
