@@ -29,7 +29,6 @@ useEffect(()=>{
         return unsubscribe()
     }
 },[])
-// eslint-disable-next-line no-unused-vars
 const googleSignIn=(value)=>{
     setLoading(true)
     return signInWithPopup(auth,googleProvider)
