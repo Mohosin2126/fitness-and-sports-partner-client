@@ -13,9 +13,9 @@ const Trainer = () => {
           <div className="md:flex md:mt-16">
           <div data-aos="fade-right"
    data-aos-offset="300"
-   data-aos-easing="ease-in-sine" className="md:flex-1 flex gap-28">
+   data-aos-easing="ease-in-sine" className="md:flex-1 flex gap-28 mt-5">
           <div className="space-y-10 bg-base-200">
-<div className=" flex flex-col h-56 lg:flex-row">
+<div className=" flex flex-col md:h-56 lg:flex-row">
   <img src="https://i.ibb.co/R34BzJ5/fit-for-court-domination-your-ultimate-basketball-trainer-header-v2-960x540.jpg" className="w-96  h-56 rounded-lg shadow-2xl" />
   <div className=" bg-slate-800">
     <h1 className="text-xl  font-bold font-serif ml-4">John</h1>
@@ -25,7 +25,7 @@ const Trainer = () => {
   </div>
 </div>
 <div className="mt-28 flex flex-col h-56 lg:flex-row">
-  <img src="https://i.ibb.co/JtByS2Y/bodybuilding-specialist-mobile-hero-image-2x.jpg" className="w-96 h-56 rounded-lg shadow-2xl" />
+  <img src="https://i.ibb.co/JtByS2Y/bodybuilding-specialist-mobile-hero-image-2x.jpg" className="w-96 md:h-56 rounded-lg shadow-2xl" />
   <div className=" bg-slate-800">
     <h1 className="text-xl  font-bold font-serif ml-4">Rock</h1>
     <h4 className="text-red-400 ml-4">Body Builder</h4>
@@ -38,7 +38,7 @@ const Trainer = () => {
           </div>
           <div  data-aos="fade-left"
    data-aos-offset="300"
-   data-aos-easing="ease-in-sine" className="md:flex-1 md:ml-10">
+   data-aos-easing="ease-in-sine" className="mt-52 md:mt-5 md:flex-1 md:ml-10">
           <div className="collapse collapse-arrow bg-base-200">
 <input type="radio" name="my-accordion-2" checked="checked" /> 
 <div className="collapse-title text-xl font-medium">

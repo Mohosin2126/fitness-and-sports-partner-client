@@ -120,9 +120,9 @@ Login
 </li>
        }
     </>
-
+// navbar justify-between 
     return (
-        <div className="navbar justify-between md:justify-normal md:space-x-[340px] h-28 mb-4">
+        <div className="navbar w-full  md:justify-normal md:gap-96 gap-36 h-28 mb-4">
             <div >
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

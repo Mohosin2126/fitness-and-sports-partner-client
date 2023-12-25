@@ -8,14 +8,14 @@ const Membership = () => {
                 <h1 className="border w-16 border-red-500"></h1>
                 <h1 className="border  w-14"></h1>
             </div>
-            <div className="mt-16 grid md:grid-cols-3  mx-auto   gap-5 ">
+            <div className="mt-16 md:flex items-center justify-center space-y-10  md:space-y-0 md:gap-40   ">
             <motion.div
       animate={{
         scale: [1, 2, 2, 1, 1],
         rotate: [0, 0, 180, 180, 0],
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       }}
-    >            <div className="relative flex w-full md:max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-red-600 to-red-300 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
+    >            <div className="relative flex w-full md:max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-slate-700 to-slate-800 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
   <div className="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none border-white/10 bg-clip-border">
   <p className="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
     standard
@@ -155,7 +155,7 @@ const Membership = () => {
         rotate: [0, 0, 90, 180, 0],
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       }}
-    ><div className="relative flex w-full md:max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-red-600 to-red-300 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
+    ><div className="relative flex w-full md:max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-slate-700 to-slate-800 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
     <div className="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none border-white/10 bg-clip-border">
       <p className="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
         Normal
@@ -298,7 +298,7 @@ const Membership = () => {
         rotate: [0, 0, 180, 180, 0],
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       }}
-    > <div className="relative flex w-full md:max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-red-600 to-red-300 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
+    > <div className="relative flex w-full md:max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-slate-700 to-slate-800 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
     <div className="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none border-white/10 bg-clip-border">
       <p className="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">
      Student

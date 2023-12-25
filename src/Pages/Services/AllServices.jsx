@@ -5,8 +5,8 @@ const AllServices = ({allservice}) => {
     const{_id,ServiceName,ServiceDescription,ServiceProvider,ServicePrice,ServiceArea,ServiceImage}=allservice
     return (
         <div>
-             <div className=" flex flex-col h-60 lg:flex-row">
-    <img src={ServiceImage} className="w-72 h-60 shadow-2xl rounded-lg" />
+             <div className=" flex flex-col md:h-60  lg:flex-row">
+    <img src={ServiceImage} className="md:w-72 h-60 shadow-2xl rounded-lg" />
     <div className=" bg-slate-800">
       <h1 className="text-xl  font-bold font-serif ml-4">{ServiceName}</h1>
       <div className="flex items-center ml-4 mt-3 gap-4 ">
